@@ -28,3 +28,4 @@ Thumbs.db
 
 # Temporary vendor files
 vendor/
+.markdownlint.json
