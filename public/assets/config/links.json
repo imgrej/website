@@ -1,0 +1,44 @@
+[
+    {
+        "label": "GitHub",
+        "url": "https://github.com/imgrej",
+        "gradient": "45deg, #171515, #4e545c",
+        "icon": "fab fa-github"
+    },
+    {
+        "label": "Twitter",
+        "url": "https://twitter.com/imgrej",
+        "gradient": "45deg, #1da1f2, #1c9ceb",
+        "icon": "fab fa-twitter"
+    },
+    {
+        "label": "Instagram",
+        "url": "https://instagram.com/imgrej",
+        "gradient": "45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888",
+        "icon": "fab fa-instagram"
+    },
+    {
+        "label": "YouTube",
+        "url": "https://youtube.com/@imgrej",
+        "gradient": "45deg, #ff0000, #ff4f00",
+        "icon": "fab fa-youtube"
+    },
+    {
+        "label": "Twitch",
+        "url": "https://twitch.tv/imgrej",
+        "gradient": "45deg, #6441a5, #a17bca",
+        "icon": "fab fa-twitch"
+    },
+    {
+        "label": "Steam",
+        "url": "https://steamcommunity.com/profiles/76561198022425860",
+        "gradient": "45deg, #171a21, #4e545c",
+        "icon": "fab fa-steam"
+    },
+    {
+        "label": "MyAnimeList",
+        "url": "https://myanimelist.net/animelist/imgrej",
+        "gradient": "45deg, #2e51a2, #1c3a70", 
+        "icon": "assets/images/myanimelist.svg"
+    }
+]
