@@ -62,10 +62,13 @@ h1 {
 /* Button Container */
 .button-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;
+    grid-template-columns: repeat(2, 1fr); /* Limit to a maximum of 2 columns */
+    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center items vertically within their rows */
+    padding: 20px; /* Add padding around the container */
+    max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+    margin: 0 auto; /* Center the container */
 }
 
 /* Button Styles */
@@ -156,6 +159,9 @@ h1 {
 @media (max-width: 768px) {
     .button {
         flex: 1 1 calc(50% - 30px);
+    }
+    .button-container {
+        grid-template-columns: 1fr; /* One button per row on smaller screens */
     }
 }
 

@@ -19,8 +19,7 @@
         <div class="logo-container">
             <img src="assets/images/logo.svg" alt="Logo" class="logo">
         </div>
-        <div class="button-container">
-        </div>
+        <div class="button-container"></div>
     </main>
 
     <?php include '../src/templates/footer.php'; ?>
