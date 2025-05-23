@@ -1,0 +1,22 @@
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--preloader-background);
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#spinner {
+    font-size: 8vh;
+    color: var(--preloader-icon-color);
+}

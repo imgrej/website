@@ -1,5 +1,6 @@
-// This file configures a Three.js background that fills the entire screen and persists during scrolling.
-
+// Import a Perlin noise library (e.g., `simplex-noise` or any other library)
+// You can include a library like `simplex-noise` via a CDN or npm
+// Example: <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 const noise = new SimplexNoise(); // Initialize the noise generator
 
 // Configurable variables
@@ -8,43 +9,45 @@ const CONFIG = {
     planeHeight: 200, // Height of the plane
     planeSegments: 300, // Number of segments for the plane geometry
     contourSpacing: 1.4, // Spacing between contour lines
-    lineColor: 0x862137, // Use your main color for contour lines
+    lineColor: 0x862137, // Color of the contour lines
     lineThickness: 0.02, // Thickness of the contour lines
     cameraPosition: { x: 0, y: 125, z: 0 }, // Camera position for top-down view
-    backgroundColor: 0x49123A, // Use your secondary color for the background
-    backgroundAlpha: true, // Enable transparency
+    backgroundColor: 0x49123A, // Background color of the scene
+    backgroundAlpha: true, // Enable or disable transparency
     noiseSpeed: 0.0005, // Speed of the noise evolution
     heightAmplitude: 4, // Amplitude of the heightmap
     noiseScaleX: 0.015, // Scale of the noise on the X axis
     noiseScaleY: 0.015 // Scale of the noise on the Y axis
 };
 
+// Select the container where the background will be rendered
+const container = document.getElementById('threejs-container');
+
 // Create a Three.js scene
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, container.offsetWidth / container.offsetHeight, 0.1, 1000);
 
 // Create a Three.js renderer with configurable alpha
 const renderer = new THREE.WebGLRenderer({
     antialias: true,
     alpha: CONFIG.backgroundAlpha // Use the configurable alpha setting
 });
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(container.offsetWidth, container.offsetHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.domElement.style.position = 'fixed'; // Ensure the canvas stays fixed
-renderer.domElement.style.top = '0';
-renderer.domElement.style.left = '0';
-renderer.domElement.style.width = '100%';
-renderer.domElement.style.height = '100%';
-renderer.domElement.style.zIndex = '-1'; // Place the canvas behind other elements
-document.body.appendChild(renderer.domElement);
+// Remove or comment out the following line to avoid setting a background color
+// renderer.setClearColor(CONFIG.backgroundColor);
+container.appendChild(renderer.domElement);
 
 // Resize the renderer and camera on window resize
 function resizeRenderer() {
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    camera.aspect = window.innerWidth / window.innerHeight;
+    renderer.setSize(container.offsetWidth, container.offsetHeight);
+    camera.aspect = container.offsetWidth / container.offsetHeight;
     camera.updateProjectionMatrix();
 }
 window.addEventListener('resize', resizeRenderer);
+
+// Call resizeRenderer initially to set up the correct aspect ratio
+resizeRenderer();
 
 // Create a plane geometry for the terrain
 const geometry = new THREE.PlaneGeometry(CONFIG.planeWidth, CONFIG.planeHeight, CONFIG.planeSegments, CONFIG.planeSegments);
