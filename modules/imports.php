@@ -12,9 +12,6 @@
 <link rel="stylesheet" href="assets/css/variables.css">
 <link rel="stylesheet" href="assets/css/link-classes.css">
 <link rel="stylesheet" href="assets/css/preloader.css">
-<link rel="stylesheet" href="assets/css/footer.css">
-<link rel="stylesheet" href="assets/css/wrapper.css">
-<link rel="stylesheet" href="assets/css/linktree.css">
 
 <!-- Include dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>

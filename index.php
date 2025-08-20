@@ -15,9 +15,5 @@ error_reporting(E_ALL);
 <body>
     <?php include 'modules/preloader.php'; ?>
     <?php include 'modules/background.php'; ?>
-    <div class="wrapper">
-        <?php include 'modules/linktree.php'; ?>
-    </div>
-    <?php include 'modules/footer.php'; ?>
 </body>
 </html>
