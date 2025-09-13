@@ -1,0 +1,58 @@
+{
+    "links": {
+        "instagram": {
+            "url": "https://instagram.com/imgrej",
+            "username": "imgrej",
+            "color": "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
+            "font-awesome": "fa-brands fa-instagram"
+        },
+        "youtube": {
+            "url": "https://www.youtube.com/@imgrej",
+            "sitename": "YouTube",
+            "username": "imgrej",
+            "color": "#FF0000",
+            "font-awesome": "fa-brands fa-youtube"
+        },
+        "x": {
+            "url": "https://x.com/imgrej",
+            "sitename": "X / Twitter",
+            "username": "imgrej",
+            "color": "#000",
+            "font-awesome": "fa-brands fa-x-twitter"
+        },
+        "twitch": {
+            "url": "https://www.twitch.tv/imgrej",
+            "sitename": "Twitch",
+            "username": "imgrej",
+            "color": "#9146FF",
+            "font-awesome": "fa-brands fa-twitch"
+        },
+        "github": {
+            "url": "https://github.com/imgrej",
+            "sitename": "GitHub",
+            "username": "imgrej",
+            "color": "#333",
+            "font-awesome": "fa-brands fa-github"
+        },
+        "steam": {
+            "url": "https://steamcommunity.com/id/imgrej",
+            "sitename": "Steam",
+            "username": "imgrej",
+            "color": "#171A21",
+            "font-awesome": "fa-brands fa-steam"
+        },
+        "myanimelist": {
+            "url": "https://myanimelist.net/profile/imgrej",
+            "sitename": "MyAnimeList",
+            "username": "imgrej",
+            "color": "#2E51A2",
+            "logo-url": "assets/images/myanimelist.svg"
+        },
+        "zizzclub": {
+            "url": "https://zizz.club/",
+            "sitename": "zizz.club",
+            "color": "#5865f2",
+            "logo-url": "assets/images/zizz_club.svg"
+        }
+    }
+}
