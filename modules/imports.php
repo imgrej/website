@@ -22,4 +22,4 @@
 
 <!-- Scripts -->
 <script src="assets/js/preloader.js"></script>
-<script type="module" src="assets/js/background.js"></script>
+<script src="assets/js/background.js"></script>
