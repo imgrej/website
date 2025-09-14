@@ -10,7 +10,6 @@
 <!-- Style sheets -->
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="assets/css/link-classes.css">
 <link rel="stylesheet" href="assets/css/preloader.css">
 <link rel="stylesheet" href="assets/css/card.css">
 
